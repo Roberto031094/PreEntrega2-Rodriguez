@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+header{
+    background-color: rgb(160, 12, 12);
+    grid-area: header;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li{
+    width: 150px;
+    list-style: none;
+    text-align: center;
+   height: fit-content;
+   padding-top: 8px;
+}
+
+.header__nav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.header__nav:hover{
+    text-decoration: none;
+    color: rgb(160, 12, 12);
+    background-color: white;
+}
+
+main{
+    background-image: url("../imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    grid-area: main;
+    background-image: url("../imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero{
+    background-image: url("../imagenes/banner-home.jpg");
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.como__trabajamos h2{
+    color: rgb(160, 12, 12) !important;
+}
+
+.explora{
+    background-color: rgb(160, 12, 12);
+    color: white;
+}
+
+.explora h2{
+    padding-top: 30px;
+    text-decoration: underline;
+}
+
+.explora__iconos{
+    list-style: none;
+}
+
+.explora__icono{
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+}
+
+.explora__icono:hover{
+    box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+    -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+    -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49); ;
+}
+
+.explora__nombres li{
+    width: 150px;
+    height: fit-content;
+    list-style: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.explora__descrip li{
+    width: 150px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avisos__titulo{
+    color: rgb(160, 12, 12);
+}
+
+.avisos__publicaciones{
+    margin-top: 20px;
+    border: 2px solid black;
+    height: 200px;
+    overflow: auto;
+    background-color: rgb(243, 243, 243);
+}
+
+.achiras__slide h2{
+    color: rgb(160, 12, 12);
+}
+
+.grid-servicios{
+    background-image: url("../imagenes/background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        ". truck1 serv1 serv1 serv1 truck2 ."
+        ". work1 serv2 serv2 serv2 work2 ."
+        ". map1 serv3 serv3 serv3 map2 ."
+    ;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.icono-truck{
+    grid-area: truck1;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.icono-work{
+    grid-area: work1;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.icono-map{
+    grid-area: map1;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.hijo-servicio1{
+    grid-area: serv1;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hijo-servicio2{
+    grid-area: serv2;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hijo-servicio3{
+    grid-area: serv3;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icono-truck2{
+    grid-area: truck2;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    transform: scaleX(-1);
+}
+.icono-work2{
+    grid-area: work2;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    transform: scaleX(-1);
+}
+.icono-map2{
+    grid-area: map2;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    transform: scaleX(-1);
+}
+
+.preguntas-servicios{
+    color: rgb(160, 12, 12);
+}
+
+.presupuesto__titulo{
+    text-decoration: underline;
+}
+
+.presupuesto__contenido{
+    color: white;
+    background-color: rgb(160, 12, 12);
+}
+
+.presupuesto__info{
+    border: 1px solid white;
+}
+
+.presupuesto__info:hover{
+    box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+    -webkit-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);
+    -moz-box-shadow: 1px 5px 49px 1px rgba(255,255,255,0.49);    
+}
+
+.billeteras{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.formulario__titulo{
+    color: rgb(160, 12, 12);
+}
+
+.contacto__nombre{
+    width: 290px;
+}
+
+.contacto__correo{
+    width: 431px;
+}
+
+#boton-submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enviar{
+    margin: 10px;
+    height: 30px;
+    width: 50px;
+}
+
+.enlaces__redes{
+    background-color: rgb(160, 12, 12);
+    color: white;
+}
+
+.enlaces__icono{
+    height: 150px;
+    width: 150px;
+}
+
+.enlaces__lista li{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.buscanos h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(160, 12, 12);
+}
+
+.mapa__ubicacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+  
+.mapa__info{
+    margin: 0px 20px;
+    height: 200px;
+    width: fit-content;
+}
+  
+.mapa__info h3 {
+    font-size: 26px;
+}
+  
+.mapa__info p {
+    font-size: 20px;
+}
+
+  
+@media (max-width:380px){
+    .hero{
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        background-position: left;
+    }
+
+    .trabajo__titulo{
+        text-align: left;
+    }
+
+    .valoraciones__estrellas{
+        height: 18px;
+        width: 93px;
+    }
+
+    .valoraciones__usuarios{
+        font-size: 18px;
+    }
+
+    .achiras__slide{
+        width: 70vh;
+    }
+
+    .grid-servicios{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "truck1 serv1 serv1 serv1 serv1 serv1 truck2 "
+            "work1 serv2 serv2 serv2 serv2 serv2 work2 "
+            "map1 serv3 serv3 serv3 serv3 serv3 map2 "
+        ;
+    }
+    
+    .icono-truck{
+        grid-area: truck1;
+        height: 300px;
+        width: 150px;
+    }
+    .icono-work{
+        grid-area: work1;
+        height: 300px;
+        width: 150px;
+    }
+    .icono-map{
+        grid-area: map1;
+        height: 300px;
+        width: 150px;
+    }
+    .hijo-servicio1{
+        grid-area: serv1;
+        height: 300px;
+    }
+    .hijo-servicio2{
+        grid-area: serv2;
+        height: 300px;
+    }
+    .hijo-servicio3{
+        grid-area: serv3;
+        height: 300px;
+    }
+    .icono-truck2{
+        grid-area: truck2;
+        height: 300px;
+        width: 150px;
+    }
+    .icono-work2{
+        grid-area: work2;
+        height: 300px;
+        width: 150px;
+    }
+    .icono-map2{
+        grid-area: map2;
+        height: 300px;
+        width: 150px;
+    }
+    
+    .respuestas-servicios{
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .respuestas-servicios br{
+        display: none;
+    }
+
+    .presupuesto__intro{
+        margin: 20px;
+    }
+
+    .presupuesto__intro br{
+        display: none;
+    }
+
+    .presupuesto__info p{
+        margin-top: 10px;
+    }
+
+    .mapa__ubicacion{
+        justify-content: center;
+    }
+
+    .mapa__info{
+        margin: 0px 10px;
+        width: 240px;
+    }
+}
