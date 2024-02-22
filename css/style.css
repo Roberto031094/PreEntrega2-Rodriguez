@@ -409,7 +409,11 @@ footer{
     }
 
     .achiras__slide{
-        width: 90vh;
+        width: 100vw;
+    }
+
+    .carousel-inner img{
+        width: 100vw;
     }
 
     .grid-servicios{
@@ -426,17 +430,17 @@ footer{
     .icono-truck{
         grid-area: truck1;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     .icono-work{
         grid-area: work1;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     .icono-map{
         grid-area: map1;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     .hijo-servicio1{
         grid-area: serv1;
@@ -453,19 +457,24 @@ footer{
     .icono-truck2{
         grid-area: truck2;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     .icono-work2{
         grid-area: work2;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     .icono-map2{
         grid-area: map2;
         height: 300px;
-        width: 150px;
+        width: 70px;
     }
     
+    .servicios__icono{
+        height: 64px;
+        width: 64px;
+    }
+
     .respuestas-servicios{
         margin-top: 20px;
         text-decoration: none;
@@ -487,12 +496,41 @@ footer{
         margin-top: 10px;
     }
 
+    
+    .contacto__nombre{
+        width: 159px;
+    }
+
+    .contacto__correo{
+        width: 300px;
+    }
+
+    #cajaConsulta{
+        width: 300px;
+    }
+
+    .enlaces__icono{
+        height: 90px;
+        width: 90px;
+    }
+
     .mapa__ubicacion{
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    iframe{
+        width: 90vw;
     }
 
     .mapa__info{
         margin: 0px 10px;
         width: 240px;
+        text-align: center;
+    }
+
+    .mapa__info br{
+        display: none;
     }
 }
