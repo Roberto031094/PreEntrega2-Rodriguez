@@ -358,7 +358,7 @@ footer{
 
     header ul li{
         width: fit-content;
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
     .hero{
@@ -369,22 +369,43 @@ footer{
         background-position: left;
     }
 
+    .explora__texto{
+        padding: 20px;
+    }
+
     .explora__icono{
         height: 75px;
         width: 75px;
     }
 
-    .trabajo__titulo{
-        text-align: left;
+    .explora__nombres li{
+        width: 75px;
+        font-size: 10px;
     }
 
-    .valoraciones__estrellas{
-        height: 18px;
-        width: 93px;
+    .trabajamos__contenedor{
+        width: 80vw;
+    }
+
+    .explora__descrip li{
+        width: 75px;
+    }
+
+    .explora__descrip{
+        font-size: 10px;
+    }
+
+    .trabajo__titulo{
+        text-align: center;
+    }
+
+    .valoraciones__caja{
+        width: 80vw;
+        margin-bottom: 20px;
     }
 
     .valoraciones__usuarios{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .achiras__slide{
