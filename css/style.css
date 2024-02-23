@@ -492,11 +492,18 @@ footer{
         display: none;
     }
 
+    .presupuesto__info{
+        width: 70vw;
+    }
+
     .presupuesto__info p{
         margin-top: 10px;
     }
 
-    
+    .billeteras{
+        width: 90vw;
+    }
+
     .contacto__nombre{
         width: 159px;
     }
